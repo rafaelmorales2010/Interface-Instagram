@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lincando styles.css-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Favicon colocar icone no título-->
+    <link rel="shortcut icon" href="icones/Instagram120.ico" type="image/x-icon">
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <div class="container-imagens">
+
+        <img class="img-celular" src="img/celular.png" alt="Celular">
+
+        <!--Adicionar as imagens para dar dinamica nas imagens com javascript-->
+        <img   class="imagem-celular" src="img/insta1.png" alt="">
+        <img  class="imagem-celular"  id="troca-imagem"  src="img/insta2.png" alt="">
+
+    </div>
+
+    <div class="container-itens">
+
+        <div class="container-form">
+            <img class="insta-logo" src="img/insta-logo.png" alt="Logo Instagram">
+            <!-- placeholder coloca texto dentro do input-->
+            <input placeholder="Telefone, nome de usuário ou e-mail">
+            <input placeholder="Senha">
+
+            <!--inserindo botão-->
+            <button>Entrar</button>
+            <!--Criando links-->
+            <img  class="imagem-face" src="img/facebook.png" alt="">
+            <a class="login-facebook" href="https://www.facebook.com/"> Entrar com o Facebook</a>
+            <a class="esqueceu-senha">Esqueceu a senha?</a>
+        </div>
+
+        <div class="container-cadastro">
+            <p class="paragrafo-conta">Não tem uma conta?</p><a class="link-cadastro">Cadastrar-se</a>
+        </div>
+
+        <p class="paragrafo-app">Obtenha o aplicativo</p>
+        <div class="container-app">
+            <img class="logo-app" src="img/ios.png" alt="Logo do ios">
+
+            <img class="logo-app" src="img/google.png" alt="Logo do google">
+        </div>
+    </div>
+</body>
+
+
+<script>
+/*let imagem é a variável  - document é o pagina html para chamar id criado no html com getElementById*/
+/*pegando as duas imagens que dentro do htmlpara fazer efeito de troca de imagem*/
+let imagem = document.getElementById("troca-imagem");
+
+/*criando uma função para imagem sumir*/
+function trocaImagem() {
+/*se a imagem estiver apagada então recebe 1 para aparecer novamente*/
+if(imagem.style.opacity == 0){
+    imagem.style.opacity = 1
+
+}else{/*se não ou seja imagem tiver 1 ou seja normal então apagar novamente*/
+    imagem.style.opacity = 0;
+}
+
+
+}
+
+/*chamndo a função trocaImagem para sumir a cada 3 segundos*/
+setInterval(function() {
+    trocaImagem();
+}, 4000);
+
+
+
+</script>
+
+
+
+</html>

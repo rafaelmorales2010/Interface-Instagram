@@ -1,0 +1,211 @@
+/*resetando a margim e padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cor em  hexadecimal*/
+body {
+    background: #fafafa;
+    /*largura 100%*/
+    width: 100vw;
+    /*altura 100%*/
+    height: 100vh;
+    display: flex;
+    /*justifica o conteúdo ao centro*/
+    justify-content: center;
+    /*colocou os itens ao centro da página*/
+    align-items: center;
+}
+
+
+.img-celular {
+    /*largura da imagem*/
+    width: 450px;
+}
+
+.container-itens {
+
+    width: 350px;
+}
+
+.container-form {
+    /*coloca um do lado do outro*/
+    display: flex;
+    /*coloca um baixo do outro*/
+    flex-direction: column;
+    /*espeçura da borda linnha solida e cor*/
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+
+    /* mesma coisa que o codigo de cima
+    padding: 50px 40px 20px 40px*/
+
+}
+
+
+.insta-logo {
+    /*espaço externo para baixo*/
+    margin-bottom: 20px;
+
+}
+
+
+input {
+    /*mudar altura do input*/
+    height: 36px;
+
+    /*tirar linha azul do campo input*/
+    outline: none;
+
+    /*configurando a borda do campo input*/
+    border: 1px solid #dbdbdb;
+
+    /*arredondar a borda do campo input*/
+    border-radius: 3px;
+    /*da espaço interno lado esquerdo empurrando conteúdo mais para direira*/
+    padding-left: 5px;
+    /*da espaço lado externo do input na parte de cima*/
+    margin-top: 5px;
+    color: #262626;
+
+}
+
+button {
+    /*trocando cor de fundo*/
+    background: #0095f6;
+    /*altura */
+    height: 30px;
+    /*arredondando os cantos do botão*/
+    border-radius: 3px;
+    /*tirando borda*/
+    border: none;
+    /*mudando cor do texto*/
+    color: #ffffff;
+    /*espaço externo na parte de cima*/
+    margin-top: 5px;
+
+    /*cursor virar uma mão  ao passar mouse no botão*/
+    cursor: pointer;
+}
+
+
+.login-facebook {
+
+    /*cor da fonte*/
+    color: #385185;
+
+    /*fonte em negrito*/
+    font-weight: bold;
+
+    /*alinhamento do texto ao centro*/
+    text-align: center;
+    /* espaço externo parte de cima*/
+    margin-top: 20px;
+
+    /*espaço externo para baixo*/
+    margin-bottom: 20px;
+    cursor: pointer;
+    /*tamanho fonte*/
+    font-size: 14px;
+    /*tira a decoração tipo um linha em baixo*/
+    text-decoration: none;
+}
+
+.esqueceu-senha {
+
+    color: #385185;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid color #dbdcdcdc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.paragrafo-conta {
+    font-size: 14px;
+
+
+}
+
+.link-cadastro {
+    /*Color mudar a cor da fonte*/
+    color: #0095f6;
+    /*mudar a fonte parecido com negrito*/
+    font-weight: bold;
+    /*tamanho da fonte*/
+    font-size: 14px;
+    /*espaçamento externo para nesgrudar*/
+    margin-left: 5px;
+
+    /*muda o formato do cursor*/
+    cursor: pointer;
+}
+
+
+.paragrafo-app {
+    /*espaçamento externo a cima*/
+    margin-top: 20px;
+    /*espaçamento externo a baixo*/
+    margin-bottom: 20px;
+    /*deixando ao centro*/
+    text-align: center;
+}
+
+.container-app {
+    display: flex; /*colocando as imagens um ao lado do outro*/
+    gap: 10px/*utlizado para dar espaçamento entre o itens, utilizado apenas na DIV*/;
+    justify-content: center;
+
+}
+
+
+.logo-app {
+    width: 150px;
+    
+
+}
+
+
+.imagem-celular {
+
+    height: 520px;
+ /*utilizando para pocionar onde eu quero*/
+    position:absolute;
+    left: 153px;
+    top: 27px;
+   /*fazendo efeito trasição para ficar mais fluido  incio e começo da trasition*/
+    transition: opacity 2s ease-in-out;
+  
+}
+
+.container-imagens {
+    /* classe pai DIV se for relative as imagens se mexem juntas mas se tiver class filha como position absolution*/
+    position: relative;
+}
+
+
+
+.imagem-face {
+
+    width: 50px;
+    position: absolute;
+    left: 55.6px;
+    top: 268px;
+}
+
